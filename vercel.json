@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "LM/**/*", 
+        "src": "./app.py", 
         "use": "@vercel/static"
       },
       {
