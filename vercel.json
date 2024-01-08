@@ -1,0 +1,5 @@
+{
+    "routes": [
+    {"src": "/api/generer_tour_magique", "dest": "/api/generer_tour_magique"}
+    ]
+}
