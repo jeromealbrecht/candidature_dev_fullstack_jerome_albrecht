@@ -1,8 +1,5 @@
-from flask import Flask, render_template, jsonify
-from waitress import serve
-from index import app
-
 import random
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
@@ -27,4 +24,25 @@ def generer_tour_magique():
     return jsonify({'tour_magique': tour_magique})
 
 if __name__ == '__main__':
-    serve(app, host='0.0.0.0', port=8080)
+    # Utilisez Gunicorn pour le déploiement en production
+    from gunicorn.app.base import BaseApplication
+
+    class GunicornApp(BaseApplication):
+        def __init__(self, app, options=None):
+            self.options = options or {}
+            self.application = app
+            super().__init__()
+
+        def load_config(self):
+            for key, value in self.options.items():
+                self.cfg.set(key, value)
+
+        def load(self):
+            return self.application
+
+    options = {
+        'bind': '0.0.0.0:8080',
+        'workers': 4  # Ajustez le nombre de travailleurs en fonction de vos besoins
+    }
+
+    GunicornApp(app, options).run()
