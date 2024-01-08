@@ -1,147 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <title>Lettre de motivation Développeur Full Stack</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/styles.css">
 </head>
+
 <body>
-
     <div class="app-container">
-        <h1 class="nomob">Les produits générés via Python et Flask.
-        </h1>
-
-        <h1 class="nodesk">Les produits générés
-        </h1>
-        
+        <h1 class="nomob">Les produits générés (via Python et Flask).</h1>
+        <h1 class="nodesk">Les produits générés </h1>
         <p class="p-subtitle">Générer quelques exemples de caractéristiques produits qu’ils envisagent de perfectionner et de créer :</p>
-        <div class="generate-button">
-            <button onclick="genererTourMagique()">Générer</button>
-        </div>
-
+        <div class="generate-button"> <button onclick="genererTourMagique()">Générer</button> </div>
         <div id="tourMagiqueContainer">
             <p class="p-magical" id="tourMagique"></p>
         </div>
-
-        <div class="github-button mt2 mb2">
-            <a href="https://github.com/jeromealbrecht/candidature_dev_fullstack_jerome_albrecht/tree/master" target="_blank">
-                <button>Voir le code sur GitHub</button>
-            </a>
-        </div>
-
-        <div class="generate-button mb2">
-            <button onclick="toggleProfile()">Afficher/Masquer Mon Profil</button>
-        </div>
-
+        <div class="github-button mt2 mb2"> <a href="https://github.com/jeromealbrecht/candidature_dev_fullstack_jerome_albrecht/tree/master" target="_blank"> <button>Voir le code sur GitHub</button> </a> </div>
+        <div class="generate-button mb2"> <button onclick="toggleProfile()">Afficher/Masquer Mon Profil</button> </div>
         <div class="letter-container" id="profileSection">
             <!-- Mon profil -->
             <div class="profile">
                 <div class="infos">
                     <h1>Jérôme Albrecht</h1>
                     <h2>Développeur Full Stack, 3 années d'expérience</h2>
-                    <p>Contact : <a href="tel:+33699126183">0699126183</a></p>
-                    <p>Mail : <a href="mailto">jerome.albrecht80@gmail.com</a></p>
+                    <p>Contact : <a href="tel:+33699126183">0699126183</a> </p>
+                    <p>Mail : <a href="mailto">jerome.albrecht80@gmail.com</a> </p>
                     <p>Véhiculé</p>
                     <p>Mobilité : Paris, Lille, Amiens</p>
                 </div>
-
-                <div class="candidat-picture">
-                    <img src="../static/img/Profile_Jerome_A.webp" alt="Photo de profil de Jérôme Albrecht">
-                </div>
+                <div class="candidat-picture"> <img src="../static/img/Profile_Jerome_A.webp" alt="Photo de profil de Jérôme Albrecht"> </div>
             </div>
         </div>
-
-        <div class="generate-button mb2 mt2">
-            <button onclick="toggleLetter()">Afficher/Masquer La lettre</button>
-        </div>
-        <!-- Contenu de la lettre -->
+        <div class="generate-button mb2 mt2"> <button onclick="toggleLetter()">Afficher/Masquer La lettre</button> </div> <!-- Contenu de la lettre -->
         <div class="letter-container" id="letterSection">
-                <h2>Objet : Candidature à l'offre de Développeur Full Stack</h2>
-
-                <p>
-                    Bonjour à l'équipe dynamique de PresenceDoc 🚀,
-                </p>
-                
-                <p>
-                    Je suis Jérôme Albrecht, un développeur fort de trois années d'expérience dans le monde du développement. Ma spécialité réside dans l'utilisation des stacks de JavaScript, en particulier Svelte et React JS, pour créer des applications robustes et conviviales.
-                </p>
-                
-                <p>
-                    Mon approche du Front-end ne se limite pas à la rédaction de code ; c'est une fusion de compétences techniques et de créativité visuelle. Les frameworks JavaScript sont mes outils de prédilection, utilisés comme des pinceaux numériques pour façonner des expériences utilisateur exceptionnelles.
-                </p>
-                
-                <p>
-                    Plus récemment, j'ai élargi mes compétences en ajoutant le langage Python à mon répertoire. Cette extension me permet de créer des solutions Back-end puissantes, ajoutant une nouvelle dimension à mon savoir-faire.
-                </p>
-                
-                <p>
-                    Mon appétit pour la connaissance m'a conduit à explorer de nouveaux horizons technologiques, en utilisant des outils tels que Google Collab, Firestore, Google Insights, et en participant à des formations sur ES6 JavaScript. Mon approche est pragmatique, anticipant les tendances technologiques futures.
-                </p>
-                
-                <p>
-                    Ma valeur ajoutée réside dans mon autonomie, mon expérimentation dans la résolution de problème, l'envie d'apprendre constamment avec de bons mentors sur l'ES6 par exemple, l'utilisation de Flask, de Firestore, etc.
-                </p>
-                
-                <p>
-                    Je suis enthousiaste à l'idée de contribuer à votre équipe et d'apporter mon expérience dans le cadre du projet passionnant de Presencedoc.
-                </p>
-
-        </div>
-        <!-- Parlons de PresenceDoc -->
-        <div class="generate-button mb2 mt2">
-            <button onclick="toggleAbout()">Afficher/Masquer à propos</button>
-        </div>
+            <h2>Objet : Candidature à l'offre de Développeur Full Stack</h2>
+            <p> Bonjour à l'équipe dynamique de PresenceDoc 🚀, </p>
+            <p> Je suis Jérôme Albrecht, un développeur fort de trois années d'expérience dans le monde du développement. Ma spécialité réside dans l'utilisation des stacks de JavaScript, en particulier Svelte et React JS, pour créer des applications robustes et conviviales. </p>
+            <p> Mon approche du Front-end ne se limite pas à la rédaction de code ; c'est une fusion de compétences techniques et de créativité visuelle. Les frameworks JavaScript sont mes outils de prédilection, utilisés comme des pinceaux numériques pour façonner des expériences utilisateur exceptionnelles. </p>
+            <p> Plus récemment, j'ai élargi mes compétences en ajoutant le langage Python à mon répertoire. Cette extension me permet de créer des solutions Back-end puissantes, ajoutant une nouvelle dimension à mon savoir-faire. </p>
+            <p> Mon appétit pour la connaissance m'a conduit à explorer de nouveaux horizons technologiques, en utilisant des outils tels que Google Collab, Firestore, Google Insights, et en participant à des formations sur ES6 JavaScript. Mon approche est pragmatique, anticipant les tendances technologiques futures. </p>
+            <p> Ma valeur ajoutée réside dans mon autonomie, mon expérimentation dans la résolution de problème, l'envie d'apprendre constamment avec de bons mentors sur l'ES6 par exemple, l'utilisation de Flask, de Firestore, etc. </p>
+            <p> Je suis enthousiaste à l'idée de contribuer à votre équipe et d'apporter mon expérience dans le cadre du projet passionnant de Presencedoc. </p>
+        </div> <!-- Parlons de PresenceDoc -->
+        <div class="generate-button mb2 mt2"> <button onclick="toggleAbout()">Afficher/Masquer à propos</button> </div> <!-- Le tour de magie -->
         <div class="letter-container" id="presenceDoc">
             <h2>Le Tour de Magie avec Presencedoc</h2>
-
-            <p>
-                Entrez dans l'univers enchanté de Presencedoc, le produit magique qui émane de l'entreprise Presencesoft. Ces derniers ont jeté un sort il y a 2 ans pour concentrer tous leurs pouvoirs sur la gestion documentaire, une quête audacieuse pour libérer les entreprises de l'emprise du temps perdu à chercher des informations.
-            </p>
-
-            <p>
-                Cet été, un nouveau chapitre s'est ouvert avec la reprise de l'entreprise, comme un changement de saison dans le monde magique des affaires. Louis de Bentzmann est arrivé tel un sorcier puissant, et Franck Yvetot, le mage des solutions, travaille sur la solution depuis ses débuts.
-            </p>
-
-            <p>
-                Leur quête actuelle ? Transformer Presencedoc en un SaaS ambitieux avec l'intégration ultime de Google Workspace, une alliance magique pour résoudre le mystère du temps perdu.
-            </p>
-
-            <p>
-                Avec un client pilote Devoteam, ils cherchent à étendre leur magie à une centaine de clients et 10 000 utilisateurs dans les 8 mois. Actuellement, ils affinent un MVP comme des alchimistes perfectionnant leur potion magique avant de lancer le grand spectacle !
-            </p>
-        </div>
-
+            <p> Entrez dans l'univers enchanté de Presencedoc, le produit magique qui émane de l'entreprise Presencesoft. Ces derniers ont jeté un sort il y a 2 ans pour concentrer tous leurs pouvoirs sur la gestion documentaire, une quête audacieuse pour libérer les entreprises de l'emprise du temps perdu à chercher des informations. </p>
+            <p> Cet été, un nouveau chapitre s'est ouvert avec la reprise de l'entreprise, comme un changement de saison dans le monde magique des affaires. Louis de Bentzmann est arrivé tel un sorcier puissant, et Franck Yvetot, le mage des solutions, travaille sur la solution depuis ses débuts. </p>
+            <p> Leur quête actuelle ? Transformer Presencedoc en un SaaS ambitieux avec l'intégration ultime de Google Workspace, une alliance magique pour résoudre le mystère du temps perdu. </p>
+            <p> Avec un client pilote Devoteam, ils cherchent à étendre leur magie à une centaine de clients et 10 000 utilisateurs dans les 8 mois. Actuellement, ils affinent un MVP comme des alchimistes perfectionnant leur potion magique avant de lancer le grand spectacle ! </p>
+        </div> <!-- Encore ? -->
         <div class="letter-container">
-            <p>
-                J'aimerais ajouter ma baguette magique à cet ensemble extraordinaire de tours de prestige. Rejoignez-moi dans cette aventure fantastique où le code devient une véritable magie, et où chaque ligne écrite est un enchantement pour l'utilisateur final !
-            </p>
-            
-            <p>
-                Merci de m'avoir transporté dans votre monde magique. J'ai hâte de vous montrer mes tours lors d'un entretien. 🎩✨
-            </p>
-
-            <p>
-                Cordialement,<br>
-                Jérôme Albrecht
-            </p>
-
-            <p class="align">
-                Je vous invite à consulter mon profil LinkedIn pour en savoir plus sur mon parcours professionnel :
-                <a class="a-linkedin" href="https://www.linkedin.com/in/devwebapi/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48" focusable="false">
+            <p> J'aimerais ajouter ma baguette magique à cet ensemble extraordinaire de tours de prestige. Rejoignez-moi dans cette aventure fantastique où le code devient une véritable magie, et où chaque ligne écrite est un enchantement pour l'utilisateur final ! </p>
+            <p> Merci de m'avoir transporté dans votre monde magique. J'ai hâte de vous montrer mes tours lors d'un entretien. 🎩✨ </p>
+            <p> Cordialement, <br> Jérôme Albrecht </p> <!-- Invitation -->
+            <p class="align"> Je vous invite à consulter mon profil LinkedIn pour en savoir plus sur mon parcours professionnel : <a class="a-linkedin" href="https://www.linkedin.com/in/devwebapi/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48" focusable="false">
                         <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                    </svg>
-                    Linkedin
-                </a>
-            </p>
-            
-            
+                    </svg> Linkedin </a> </p>
         </div>
     </div>
-</div>
-
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-    
 </body>
+
 </html>

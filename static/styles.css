@@ -173,6 +173,7 @@ img {
 
     .nodesk {
         display: inherit;
+        font-size: 1.4rem;
     }
 
     .profile {
@@ -206,5 +207,13 @@ img {
         width: 100%;
         user-select: none;
     }
-    
+
+    .align {
+            display: flex;
+            flex-direction: column;
+    }
+
+    .a-linkedin {
+        margin-top: 2rem;
+    }
 }
