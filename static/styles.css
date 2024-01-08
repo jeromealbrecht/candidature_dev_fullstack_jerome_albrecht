@@ -51,8 +51,9 @@ h2 {
 }
 
 p {
-    line-height: 1.5;
     color: var(--text-color);
+    line-height: 1.7rem;
+    text-align: justify;
 }
 
 ul {
@@ -67,8 +68,8 @@ li {
 
 button {
     padding: 8px;
-    background-color:  #d97d82;
-    color: #fff;
+    background-color:  #ffc107;
+    color: #3c495a;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -113,8 +114,6 @@ a:hover {
 .candidat-picture {
     display: flex;
     width: 30%;
-    position: relative;
-    top: 1.2rem;
 }
 
 .github-button {
@@ -159,13 +158,24 @@ img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 30%;
 }
 
 .nodesk {
     display: none;
 }
 
+.infos {
+    position: relative;
+    top: 1.5rem;
+}
+
 @media only screen and (max-width: 600px) {
+
+    .infos {
+        position: inherit;
+        top: 1.5rem;
+    }
 
     .nomob {
         display: none;
