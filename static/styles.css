@@ -148,6 +148,11 @@ a:hover {
     align-items: center;
 }
 
+.a-linkedin {
+    display: flex;
+    align-items: center;
+}
+
 /* End */
 
 img {
