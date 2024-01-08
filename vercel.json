@@ -19,7 +19,7 @@
         "src": "/(.*)",
         "dest": "/index.html",
         "headers": {
-          "Link": "<../static/styles.css>; rel=preload; as=style"
+          "Link": "<./static/styles.css>; rel=preload; as=style"
         }
       }
     ]
