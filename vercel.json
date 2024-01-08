@@ -2,7 +2,8 @@
     "version": 2,
     "builds": [
       {
-        "src": "./index.py"
+        "src": "./index.py",
+        "use": "@vercel/python"
       },
       {
         "src": "/api/generer_tour_magique",
