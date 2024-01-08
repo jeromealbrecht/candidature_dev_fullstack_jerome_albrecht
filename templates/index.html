@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Lettre de motivation</title>
+    <title>Lettre de motivation Développeur Full Stack</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" {{ url_for('static', filename='styles.css') }}>
 </head>
 <body>
 
     <div class="app-container">
-        <h1>Les produits de PresenceDoc, <br>
-            générés via Python et Flask.
+        <h1>Les produits générés via Python et Flask.
         </h1>
         
         <p class="p-subtitle">Générer quelques exemples de caractéristiques produits qu’ils envisagent de perfectionner et de créer :</p>
@@ -74,15 +73,11 @@
                 </p>
                 
                 <p>
-                    Mon appétit insatiable pour la connaissance m'a conduit à explorer de nouveaux horizons technologiques, en utilisant des outils tels que Google Collab, Google Insights, et en participant à des formations sur ES6 JavaScript. Mon approche est pragmatique, anticipant les tendances technologiques futures.
+                    Mon appétit pour la connaissance m'a conduit à explorer de nouveaux horizons technologiques, en utilisant des outils tels que Google Collab, Firestore, Google Insights, et en participant à des formations sur ES6 JavaScript. Mon approche est pragmatique, anticipant les tendances technologiques futures.
                 </p>
                 
                 <p>
-                    Mon expérience avec Node.js va au-delà du simple développement Front-end. En tant qu'ingénieur interconnectant des applications à l'échelle, j'ai développé des API REST et déployé des services cloud, souvent en utilisant Docker pour garantir la portabilité et la scalabilité.
-                </p>
-                
-                <p>
-                    Ma valeur ajoutée réside dans une expertise Full Stack, fusionnant harmonieusement le Front-end et le Back-end pour créer des solutions performantes et pragmatiques.
+                    Ma valeur ajoutée réside dans mon autonomie, mon expérimentation dans la résolution de problème, l'envie d'apprendre constamment avec de bons mentors sur l'ES6 par exemple, l'utilisation de Flask, de Firestore, etc.
                 </p>
                 
                 <p>
@@ -92,7 +87,7 @@
         </div>
         <!-- Parlons de PresenceDoc -->
         <div class="generate-button mb2 mt2">
-            <button onclick="toggleAbout()">Afficher/Masquer L'à propos</button>
+            <button onclick="toggleAbout()">Afficher/Masquer à propos</button>
         </div>
         <div class="letter-container" id="presenceDoc">
             <h2>Le Tour de Magie avec Presencedoc</h2>

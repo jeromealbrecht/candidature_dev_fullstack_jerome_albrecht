@@ -24,7 +24,7 @@ def generer_tour_magique():
     return jsonify({'tour_magique': tour_magique})
 
 if __name__ == '__main__':
-    # Utilisez Gunicorn pour le déploiement en production
+    # Utilisons Gunicorn pour le déploiement en production
     from gunicorn.app.base import BaseApplication
 
     class GunicornApp(BaseApplication):
@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
     options = {
         'bind': '0.0.0.0:8080',
-        'workers': 4  # Ajustez le nombre de travailleurs en fonction de vos besoins
+        'workers': 4
     }
 
     GunicornApp(app, options).run()
