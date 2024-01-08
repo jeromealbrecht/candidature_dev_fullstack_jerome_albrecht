@@ -1,5 +1,24 @@
 {
+    "version": 2,
+    "builds": [
+      {
+        "src": "LM/**/*", 
+        "use": "@vercel/static"
+      },
+      {
+        "src": "/api/generer_tour_magique",
+        "use": "@vercel/node"
+      }
+    ],
     "routes": [
-    {"src": "/api/generer_tour_magique", "dest": "/api/generer_tour_magique"}
+      {
+        "src": "/api/generer_tour_magique",
+        "dest": "/api/generer_tour_magique"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
     ]
-}
+  }
+  
