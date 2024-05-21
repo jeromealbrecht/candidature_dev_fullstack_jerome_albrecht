@@ -37,7 +37,7 @@ h1, h2, p {
     color: var(--text-color);
 }
 
-h1 {
+h1, em {
     color: var(--text-color);
     text-align: center;
 }
