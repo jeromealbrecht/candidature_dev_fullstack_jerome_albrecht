@@ -5,16 +5,19 @@ app = Flask(__name__)
 
 # Liste de tours magiques
 tours_magiques = [
+    "Résolution de problèmes",
     "Expérience Front-End avec JavaScript, TypeScript",
     "Projet de simulation de modules IoT auto générés en PHP: [lien du projet sur GitHub](https://github.com/jeromealbrecht/IoT-app)",
     "Expérience Back-End avec Node.js, Python",
     "Réalisation d'un site référencé pour un studio d'enregistrement [lien du site](https://www.couleurdeson.fr)",
     "Expérience Full-Stack avec React, Angular, Svelte JS",
-    "Communication en équipe avec Slack, Microsoft Teams",
+    "Communication en équipe avec Slack, Microsoft Teams, Discord",
     "Relationnel avec les clients : 4.9/5 sur Google My Business",
     "Gestion de projet avec Trello, Asana",
     "Gestion de code source avec Git, GitHub",
     "Déploiement avec Vercel, onRender, planetHoster",
+    "Expérience en référencement SEO",
+    "À venir : formation au cloud AWS",
 ]
 
 @app.route('/')
