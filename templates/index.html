@@ -1,107 +1,178 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <title>Développeur Full Stack Jérôme Albrecht</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV en Ligne - Jérôme Albrecht</title>
     <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/css/all.css">
 </head>
-
 <body>
-    <div class="app-container">
-      
-        <div class="generate-button mb2"> <button onclick="toggleProfile()">Afficher/Masquer Mon Profil</button> </div>
-        <div class="letter-container" id="profileSection">
-            <!-- Mon profil -->
-            <div class="profile">
-                <div class="infos">
-                    <h1>Jérôme Albrecht</h1>
-                    <h2>Développeur Full Stack, 4 années d'expérience</h2>
-                    <p>Contact : <a href="tel:+33699126183">0699126183</a> </p>
-                    <p>Mail : <a href="mailto">jerome.albrecht80@gmail.com</a> </p>
-                    <p>Véhiculé</p>
-                    <p>Mobilité : Paris, Lille, Amiens</p>
+    <div class="container">
+        <div class="header">
 
-                    <a class="a-linkedin" href="https://www.linkedin.com/in/devwebapi/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48" focusable="false">
-                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                        </svg> Linkedin
-                    </a>
+            <div class="header-profile-parent">
+                <h1>Creating <span>meaningful</span>
+                    <br>
+                    <span>impactful</span> experiences
+                </h1>
+                <div class="header-profile">
+                    <p class="name">Full Stack Developper - <span>Jérôme Albrecht</span></p>
                 </div>
-                <div class="candidat-picture"> 
-                    <img src="../static/img/Profile_Jerome_A.webp" alt="Photo de profil de Jérôme Albrecht"> 
+            </div>
+            <div class="buttons">
+                <a href="#" class="button">JS/TS</a>
+                <a href="" class="button">4 Years</a>
+                <a href="#exp" class="button">Experiences</a>
+            </div>
+
+        </div>
+        <div class="who">
+            <h2>Qui suis-je ?</h2>
+            <p class="who-desc">
+                Développeur Full-Stack, mon rôle est d'apporter des solutions
+                <br>
+                afin de répondre aux besoins urgents des utilisateurs.
+                <br> 
+                <br> 
+                Grâce à mon expérience en relation client acquise via mon studio d'enregistrement,<br>
+                j'ai appris à comprendre et à répondre aux attentes spécifiques des clients.<br><br>
+                Mon expertise en création d'outils web et en développement d'applications, 
+                avec une appétence particulière pour le Back-end, 
+                me permet de fournir des solutions efficaces et adaptées.
+                <br>
+                <br>
+                Ce CV est déployé sur une infrastructure utilisant Python, le serveur d'applications Gunicorn et la plateforme de déploiement Render.
+            </p>
+        </div>
+        <div class="stats">
+            <div class="stat">
+                <h2>Front</h2>
+                <p>JavaScript</p>
+                <p>TypeScript</p>
+                <p>Svelte</p>
+                <p>Angular</p>
+
+            </div>
+            <div class="stat">
+                <h2>Back</h2>
+                <p>Node JS</p>
+                <p>Python</p>
+            </div>
+            <div class="stat">
+                <h2>Cloud</h2>
+                <p>Firebase Auth</p>
+                <p>Firebase Collections</p>
+            </div>
+        </div>
+      
+        <div id="exp" class="projects">
+            <h2>Latest projects <i class="fa-solid fa-arrow-down"></i></h2>
+            <div class="project-container">
+                <div class="project">
+                    <div class="project-content">
+                        <img src="../static/img/bpm_converter.png" alt="BPM Converter">
+                        <div class="project-text">
+                            <h3>Outil Java</h3>
+                            <p>Développement d'un outil de conversion de BPM en durée de temps ou de notes</p>
+                            <p>conversion en fichier executable</p>
+                            <div class="download-banner">
+                                <a href="https://couleurdeson.fr/BpmConverter.exe" download="">Télécharger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <img src="../static/img/angular-node.jpeg" alt="Angular Node Developer">
+                        <div class="project-text">
+                            <h3>Angular Node Developer</h3>
+                            <p>Application de gestion d'élevage</p>
+                            <p>NetInfosMedias - 2024</p>
+                            <p>Mongo DB</p>
+                            <p>Docker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <a href="https://couleurdeson.fr/" target="_blank">
+                            <img class="project-img" src="../static/img/lestudio.jpg" alt="Studio de Mixage">
+                        </a>
+                        <div class="project-text">
+                            <h3>Gestion d'un studio de mixage</h3>
+                            <p>Développement de la relation client</p>
+                                <p>Recherche et Développement Web</p>
+                                <p>Installation d'un chatbot Tidio</p>
+                                <p>Résolution de problèmes</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <p class="p-subtitle mt2">Générer parmi mes compétences :</p>
-        <div class="generate-button"> <button onclick="genererTourMagique()">Générer</button> </div>
-        <div id="tourMagiqueContainer">
-            <p class="p-magical" id="tourMagique"></p>
+          <div class="skills mt3">
+            <div class="skill">
+                <h2>Communication</h2>
+            </div>
+            <div class="skill">
+                <h2>Teamwork</h2>
+            </div>
+            <div class="skill">
+                <h2>Problem-Solving</h2>
+            </div>
         </div>
-        <div class="github-button mt2 mb2"> <a href="https://github.com/jeromealbrecht/candidature_dev_fullstack_jerome_albrecht/tree/master" target="_blank"> <button>Voir le code de ce site sur GitHub</button> </a> </div>
-        <p class="p-center">Projet de simulation de modules IoT auto générés en PHP</p>
-        <div class="github-button mt2 mb2"> <a href="https://github.com/jeromealbrecht/IoT-app" target="_blank"> <button>Voir le code du projet PHP sur GitHub</button> </a> </div>
-        <p class="p-center">Projet de site vitrine pour un studio d'enregistrement</p>
-        <div class="github-button mt2 mb2"> <a href="https://couleurdeson.fr/" target="_blank"> <button>Voir le site vitrine du studio</button> </a> </div>
-        <div class="generate-button mb2 mt2">
-            <button onclick="toggleLetter()">Afficher/Masquer La lettre</button> 
-        </div> <!-- Contenu de la lettre -->
-        <div class="letter-container" id="letterSection">
-            <h2>Objet : Candidat Développeur Web Full Stack</h2>
-            <p>Bonjour 🚀,</p>
-            <p>Je suis Jérôme Albrecht, un développeur fort de quatre années de pratique dans le monde du développement.</p>
-            
-            <p>Plus récemment, j'ai élargi mes compétences en ajoutant le langage Python et le Framework Angular JS à mon répertoire. <br>
-            Cette extension me permet de créer des solutions back-end puissantes, ajoutant une nouvelle dimension à mon savoir-faire.</p>
-            
-            <p>Mon appétit pour la connaissance m'a conduit à explorer de nouveaux horizons technologiques, en utilisant des outils tels que Firebase, Vercel, et en participant à des formations sur ES6 JavaScript. Mon approche est pragmatique, anticipant les tendances technologiques futures.</p>
-            
-            <p>Au cours de mes expériences professionnelles, j'ai eu l'opportunité de concevoir et de développer des modules et des routes réutilisables sur Angular. Ces modules et services ont amélioré la modularité des logiciels et facilité l'interaction entre le front-end et le back-end. L'implémentation de routes a permis une gestion efficace des interactions et des manipulations de données, garantissant une expérience utilisateur fluide et cohérente.</p>
-            
-            <p>Ma valeur ajoutée réside dans mon autonomie, ma capacité à expérimenter dans la résolution de problèmes, et mon envie d'apprendre constamment. J'apprécie de travailler avec de bons mentors et d'utiliser des technologies telles que Docker, Firestore, et bien plus encore.</p>
-            
-            <p>Je suis enthousiaste à l'idée de contribuer à votre équipe et d'apporter mon expérience dans le cadre de projets passionnants.</p>
-        </div>
-        <div class="generate-button mb2 mt2"> 
-            <button onclick="toggleAbout()">Afficher/Masquer à propos</button> 
-        </div> 
-        <!-- Resume -->
-        <div class="letter-container" id="presenceDoc">
-            <!-- Résumé du profil professionnel -->
-            <h2>Profil Professionnel</h2>
-            <p>Je possède une solide expérience en JavaScript (JS) et TypeScript (TS), qui me permet de développer des applications web robustes et performantes.</p>
-        
-            <p>Mes compétences incluent :</p>
-            <ul>
-                <li><strong>Docker</strong> : Maîtrise de la containerisation des applications, facilitant le déploiement et la gestion des environnements de développement.</li>
-                <li><strong>onRender et Vercel</strong> : Utilisation pour le déploiement et l'hébergement de projets, assurant une mise en production rapide et efficace.</li>
-                <li><strong>Python et Flask</strong> : Création de backends puissants et flexibles, adaptés à diverses applications web.</li>
-            </ul>
-        
-            <p>Lors de mon expérience avec le studio d'enregistrement <a href="https://couleurdeson.fr/">Couleur de son</a> près d'Amiens, j'ai pu appliquer mes compétences techniques pour contribuer à des projets audio de haute qualité. Le studio offre divers services, tels que l'enregistrement d'artistes, l'édition audio, le mixage de projets musicaux, la voix-off et le mastering. Travailler avec Couleur de son m'a permis de perfectionner mes compétences en gestion de projets et en communication au sein d'une équipe créative et dynamique.</p>
-        
-            <p>Grâce à mes compétences transversales, je suis capable de bien communiquer et de collaborer efficacement au sein de l'équipe. Mon expérience diversifiée m'a appris à adapter mes compétences techniques à différents contextes, facilitant ainsi la coopération et l'atteinte des objectifs communs.</p>
-        
-            <p>En résumé, mes compétences en JavaScript, TypeScript, Docker, onRender, Vercel, Python et Flask, combinées à mon expérience avec Couleur de son, me permettent de contribuer de manière significative à tout projet de développement web ou de gestion de projets audio. Mon aptitude à bien communiquer et à travailler en équipe me rend particulièrement apte à réussir dans des environnements collaboratifs.</p>
-        </div>
-        <div class="letter-container">
-            <p>
-                J'aimerais ajouter ma baguette magique à cet ensemble extraordinaire de tours de prestige.
-                <br> Rejoignez-moi dans cette aventure fantastique où le code devient une véritable magie, et où chaque ligne écrite est un enchantement pour l'utilisateur final !
-            </p>
-            <p>
-                Merci de m'avoir transporté dans votre monde magique. J'ai hâte de vous montrer mes tours lors d'un entretien. 🎩✨
-            </p>
-            <p>
-                Cordialement,
-                <br> Jérôme Albrecht
-            </p>
-        </div>
-        
-    </div>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
-</body>
 
+        <div id="train" class="projects">
+            <h2>Latest training <i class="fa-solid fa-arrow-down"></i></h2>
+            <div class="project-container">
+                <div class="project">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h3>Concepteur D'application<br> - en cours
+                                <br>
+                                Titre Pro Bac + 3
+                                <br>
+                            </h3>
+                            <p>Algorithmie</p>
+                            <p>JAVA SE - EE - Spring Boot</p>
+                            <p>Symfony</p>
+                            <p>Gestion de projet: Jira</p>
+                            <p>Projets en équipe</p>
+                            <p>Docker - Virtualisation Linux</p>
+                            <p>CI/CD Continious Integration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h3>Les bases de Python - 2023</h3>
+                            <p>Application de gestion d'élevage</p>
+                            <p>NetInfosMedias - 2024</p>
+                            <p>Mongo DB</p>
+                            <p>Docker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h3>Formation React-Native</h3>
+                            <p>École La Manu, Amiens</p>
+                            <p>Formation au développement mobile:</p>
+                            <p>Méthodes Agiles, Maquettage UI,</p>
+                            <p>Acquérir les principes de la programmation orientée objet,</p>
+                            <p>Maîtriser le Framework React-Nativ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="mt3">&copy; Développé par Jérôme Albrecht. No fake certified</p>
+        </div>
+    </div>
+</body>
 </html>
