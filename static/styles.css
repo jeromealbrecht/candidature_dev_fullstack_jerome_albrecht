@@ -114,7 +114,7 @@ a {
 
 .project:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px #ff4900;
+    box-shadow: 0 2px 2px #ff48005e;
 }
 
 .project-content {
@@ -136,7 +136,6 @@ a {
 .project h3 {
     margin-top: 10px;
     font-size: 1.2em;
-    text-align: justify;
 }
 .project h4 {
     margin-top: 10px;
@@ -172,9 +171,8 @@ a {
     margin-top: 4rem;
 }
 .who-desc {
-    max-width: 74%;
+    max-width: 75%;
     text-align: justify;
-    margin-top: 4.5rem;
     margin-bottom: 6rem;
     font-size: 1.25rem;
     letter-spacing: 1px;
@@ -195,6 +193,15 @@ a {
 
 .mt3 {
     margin-top: 3rem;
+}
+
+.mt4 {
+    margin-top: 4rem;
+}
+
+
+.mt5 {
+    margin-top: 5rem;
 }
 
 @media (max-width: 768px) {
